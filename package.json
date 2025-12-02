@@ -1,0 +1,32 @@
+{
+  "name": "controlup-autotests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "tests": "npx playwright test --config=playwright.config.ts",
+    "ui-tests": "npx playwright test --config=playwright.config.ts --project=ui-chromium --project=ui-firefox --project=ui-webkit",
+    "api-tests": "npx playwright test --config=playwright.config.ts --project='api tests'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeria20/controlup-autotests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/valeria20/controlup-autotests/issues"
+  },
+  "homepage": "https://github.com/valeria20/controlup-autotests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3",
+    "dotenv-safe": "^9.1.0"
+  }
+}
